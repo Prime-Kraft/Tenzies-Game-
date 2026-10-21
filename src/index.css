@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0B2434;
+    padding: 1em;
+      font-family: "Karla", sans-serif;
+}
+
+
+/*Topography*/
+h1{
+    font-weight: bold;
+    color: #2B283A;
+    font-size: 2rem;
+}
+
+small, p{
+    color: #4A4E74;
+    font-size: 1.2rem;
+}
+
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 90vw;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    min-height: 90vh;
+    justify-content: space-around;
+    padding: 1em
+
+}
+
+.head-section{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: repeat(5, 2fr);
+ grid-template-rows: auto auto;
+ gap: 16px;
+ min-width: 40px;
+
+}
+
+.die-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.die-container .die-btn{
+    width: 60px;
+    height: 60px;
+   cursor: pointer;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
+    color: #2B283A;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.roll-btn{
+    width: 20%;
+    margin: 0 auto;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+}
