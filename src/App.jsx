@@ -1,6 +1,6 @@
 import Die from "./Components/Die"
 import { useState, useRef, useEffect } from "react"
-
+import { Analytics } from "@vercel/analytics/next"
 import { nanoid } from "nanoid"
 
 import Confetti from "react-confetti"
@@ -134,7 +134,7 @@ export default function App() {
      {diceElements}
       </div>
       <button ref={buttonRef} onClick={gameWon ? newGame : handleRoll} className="roll-btn"> {gameWon? "New Game": "Roll"} </button>
-
+     <Analytics/>
     </main>
   )
 
